@@ -1,0 +1,108 @@
+/* styles/navbar.css */
+
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #343a40;
+    padding: 10px 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  /* Left: Company Logo/Name */
+  .navbar-logo {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: auto;
+  }
+  
+  /* Middle: Navbar Links */
+  .navbar-links {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-grow: 1;
+  }
+  
+  /* Individual Link Style */
+  .navbar-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Active link style */
+  .navbar-link.active {
+    background-color: #007bff;  /* Blue background for active link */
+    color: #ffffff;  /* White text */
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);  /* Blue shadow */
+  }
+  
+  /* Hover effect for links */
+  .navbar-link:hover {
+    background-color: #007bff;
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+  }
+  
+  /* Right: Profile Section */
+  .navbar-profile {
+    margin-left: auto;
+  }
+  
+  .navbar-profile-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Active profile link style */
+  .navbar-profile-link.active {
+    background-color: #28a745;  /* Green background for active profile */
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(40, 167, 69, 0.2);  /* Green shadow */
+  }
+  
+  /* Profile hover effect */
+  .navbar-profile-link:hover {
+    background-color: #28a745;
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(40, 167, 69, 0.2);
+  }
+  
+  /* Mobile Responsive: Make navbar stack vertically on smaller screens */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      padding: 15px;
+    }
+  
+    .navbar-links {
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .navbar-link {
+      padding: 10px 0;
+    }
+  
+    .navbar-profile {
+      margin-top: 10px;
+      text-align: center;
+    }
+  }
+  
