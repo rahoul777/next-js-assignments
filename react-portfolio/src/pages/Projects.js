@@ -1,4 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
+import ProjectList from "../components/ProjectList";
 
 const projects = [
     { id: 1, title: "Project Alpha", type: "web" },
@@ -33,17 +34,11 @@ function Projects() {
             </div>
 
             {/* Project List */}
-            <ul>
-                {filteredProjects.length > 0 ? (
-                    filteredProjects.map((p) => (
-                        <li key={p.id}>
-                            <Link to={`/projects/${p.id}`}>{p.title} ({p.type})</Link>
-                        </li>
-                    ))
-                ) : (
-                    <p>No projects found for this category.</p>
-                )}
-            </ul>
+            {filteredProjects?.length > 0 ? (
+                <ProjectList filteredProjects={filteredProjects} />
+            ) : (
+                <p>No Projects to display.</p>
+            )}
         </div>
     );
 }
