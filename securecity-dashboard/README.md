@@ -38,3 +38,23 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+
+## 1 Dynamic routing Dynamic User Details
+
+http://localhost:3000/dashboard/admin/users/123
+
+## 2 Role-Based User View
+
+http://localhost:3000/dashboard/admin/users/admin
+http://localhost:3000/dashboard/admin/users/user
+
+## 3 Catch-All for User Actions
+
+http://localhost:3000/dashboard/admin/users/123/edit
+http://localhost:3000/dashboard/admin/users/123/settings/security
+
+## 4 Optional Catch-All for Settings
+
+http://localhost:3000/dashboard/admin/users/settings
+http://localhost:3000/dashboard/admin/users/settings/profile
+http://localhost:3000/dashboard/admin/users/settings/notifications/email
